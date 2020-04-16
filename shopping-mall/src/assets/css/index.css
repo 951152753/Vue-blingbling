@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* 底部导航样式 */
+
+.nav-bottom {
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background: #f9f9f9;
+    border-top: 1px solid #f4f4f4;
+    padding-top: 5px;
+}
+
+.link-to {
+    display: block;
+    width: 25%;
+    float: left;
+}
+
+.nav-bottom i {
+    font-size: 22px;
+}
+
+.nav-bottom label {
+    display: block;
+}
+
+
+/* Home 导航 */
+
+.index-category {
+    margin-top: 5%;
+}
+
+.index-category .category {
+    width: 25%;
+    float: left;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.index-category .category i {
+    display: block;
+}
+
+.index-category .category label {
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.index-category .category .iconfont {
+    font-size: 2.5rem;
+    display: inline-block;
+    padding: 10%;
+    border-radius: 50%;
+    color: #fff;
+    box-shadow: 0 0 6 rgba(0, 0, 0, .5);
+}
+
+
+/* 轮播图样式 */
+
+.banner {
+    position: relative;
+}
+
+.banner .banner-img {
+    width: 100%;
+    height: 11rem;
+}
+
+.banner .banner-circle {
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    right: 0;
+    color: #fff;
+}
+
+.banner .banner-circle li {
+    display: inline-block;
+    width: 11px;
+    height: 11px;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    margin: 0 3px;
+}
+
+.selected {
+    background: rgba(0, 0, 0, 0.8) !important;
+}
+
+
+/* Home 列表展示 */
+
+.index-main {
+    margin: 0 1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.index-main .goods-lists img {
+    width: 150px;
+    height: 150px;
+}
+
+.index-main .goods-lists .goods-price {
+    position: relative;
+}
+
+.index-main .goods-lists .goods-price .goods-name{
+    display: block;
+    font-weight: bold;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+}
+
+
+.index-main .goods-lists .goods-price .discount {
+    display: block;
+    color: red;
+    font-weight: bold;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+}
+
+.index-main .goods-lists .goods-price .price-text {
+    display: block;
+    text-decoration: line-through;
+    color: rgba(0, 0, 0, .4);
+    font-size: 0.9rem;
+}

@@ -1,0 +1,268 @@
+{
+  "id": "1725373",
+  "name": "shopping mall",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon",
+  "description": "商城项目所需",
+  "glyphs": [
+    {
+      "icon_id": "5314414",
+      "name": "旅游城市建筑city-海岛island",
+      "font_class": "lvyouchengshijianzhucity-haidaoisland",
+      "unicode": "e6cc",
+      "unicode_decimal": 59084
+    },
+    {
+      "icon_id": "1917710",
+      "name": "娱乐",
+      "font_class": "yule",
+      "unicode": "e620",
+      "unicode_decimal": 58912
+    },
+    {
+      "icon_id": "5168915",
+      "name": "出租车",
+      "font_class": "chuzuche",
+      "unicode": "e621",
+      "unicode_decimal": 58913
+    },
+    {
+      "icon_id": "5469623",
+      "name": "宠物医疗",
+      "font_class": "chongwuyiliao",
+      "unicode": "e622",
+      "unicode_decimal": 58914
+    },
+    {
+      "icon_id": "5603492",
+      "name": "美食",
+      "font_class": "meishi",
+      "unicode": "e630",
+      "unicode_decimal": 58928
+    },
+    {
+      "icon_id": "6363858",
+      "name": "在线教育",
+      "font_class": "zaixianjiaoyu",
+      "unicode": "e650",
+      "unicode_decimal": 58960
+    },
+    {
+      "icon_id": "7518263",
+      "name": "发现",
+      "font_class": "faxian",
+      "unicode": "e64c",
+      "unicode_decimal": 58956
+    },
+    {
+      "icon_id": "9935214",
+      "name": "跑步",
+      "font_class": "paobu",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    },
+    {
+      "icon_id": "10818633",
+      "name": "02电影",
+      "font_class": "dianying",
+      "unicode": "e623",
+      "unicode_decimal": 58915
+    },
+    {
+      "icon_id": "14033535",
+      "name": "酒店",
+      "font_class": "jiudian",
+      "unicode": "e79a",
+      "unicode_decimal": 59290
+    },
+    {
+      "icon_id": "11908663",
+      "name": "浏览、查看",
+      "font_class": "tongyongtubiao-kuozhan-",
+      "unicode": "e604",
+      "unicode_decimal": 58884
+    },
+    {
+      "icon_id": "11908746",
+      "name": "上传",
+      "font_class": "shangchuan-",
+      "unicode": "e605",
+      "unicode_decimal": 58885
+    },
+    {
+      "icon_id": "11909684",
+      "name": "标签",
+      "font_class": "biaoqian-",
+      "unicode": "e606",
+      "unicode_decimal": 58886
+    },
+    {
+      "icon_id": "11909701",
+      "name": "点赞、看过",
+      "font_class": "dianzan-",
+      "unicode": "e608",
+      "unicode_decimal": 58888
+    },
+    {
+      "icon_id": "11909703",
+      "name": "定位",
+      "font_class": "dingwei-",
+      "unicode": "e609",
+      "unicode_decimal": 58889
+    },
+    {
+      "icon_id": "11909704",
+      "name": "订单、列表",
+      "font_class": "dingdan-",
+      "unicode": "e60a",
+      "unicode_decimal": 58890
+    },
+    {
+      "icon_id": "11909705",
+      "name": "分类、类别",
+      "font_class": "fenlei-",
+      "unicode": "e60b",
+      "unicode_decimal": 58891
+    },
+    {
+      "icon_id": "11909706",
+      "name": "福利、礼物、生日、礼盒",
+      "font_class": "fuliliwu-",
+      "unicode": "e60c",
+      "unicode_decimal": 58892
+    },
+    {
+      "icon_id": "11909709",
+      "name": "店铺设置",
+      "font_class": "dianpushezhi-",
+      "unicode": "e60d",
+      "unicode_decimal": 58893
+    },
+    {
+      "icon_id": "11909710",
+      "name": "购物车、购物、收购",
+      "font_class": "gouwuche-",
+      "unicode": "e60e",
+      "unicode_decimal": 58894
+    },
+    {
+      "icon_id": "11909711",
+      "name": "个人、我的",
+      "font_class": "geren-",
+      "unicode": "e60f",
+      "unicode_decimal": 58895
+    },
+    {
+      "icon_id": "11909712",
+      "name": "发送、分享02",
+      "font_class": "fasong--",
+      "unicode": "e610",
+      "unicode_decimal": 58896
+    },
+    {
+      "icon_id": "11909715",
+      "name": "签收、已送达、已收货",
+      "font_class": "qianshou-",
+      "unicode": "e611",
+      "unicode_decimal": 58897
+    },
+    {
+      "icon_id": "11909717",
+      "name": "品牌、服务、优质",
+      "font_class": "pinpai-",
+      "unicode": "e612",
+      "unicode_decimal": 58898
+    },
+    {
+      "icon_id": "11909719",
+      "name": "关注、点赞",
+      "font_class": "guanzhu-",
+      "unicode": "e613",
+      "unicode_decimal": 58899
+    },
+    {
+      "icon_id": "11909721",
+      "name": "时间",
+      "font_class": "shijian-",
+      "unicode": "e614",
+      "unicode_decimal": 58900
+    },
+    {
+      "icon_id": "11909724",
+      "name": "删除",
+      "font_class": "shanchu-",
+      "unicode": "e615",
+      "unicode_decimal": 58901
+    },
+    {
+      "icon_id": "11909725",
+      "name": "收款、钱包、收集",
+      "font_class": "shoukuan-",
+      "unicode": "e616",
+      "unicode_decimal": 58902
+    },
+    {
+      "icon_id": "11909726",
+      "name": "搜索、放大镜、查询",
+      "font_class": "sousuo-",
+      "unicode": "e617",
+      "unicode_decimal": 58903
+    },
+    {
+      "icon_id": "11909728",
+      "name": "首页、房子",
+      "font_class": "shouye-",
+      "unicode": "e618",
+      "unicode_decimal": 58904
+    },
+    {
+      "icon_id": "11909729",
+      "name": "分享",
+      "font_class": "fenxiang-",
+      "unicode": "e619",
+      "unicode_decimal": 58905
+    },
+    {
+      "icon_id": "11909731",
+      "name": "添加02",
+      "font_class": "tianjia-",
+      "unicode": "e61a",
+      "unicode_decimal": 58906
+    },
+    {
+      "icon_id": "11909733",
+      "name": "设置",
+      "font_class": "shezhi-",
+      "unicode": "e61b",
+      "unicode_decimal": 58907
+    },
+    {
+      "icon_id": "11909734",
+      "name": "认证、保证、安全",
+      "font_class": "renzheng-",
+      "unicode": "e61c",
+      "unicode_decimal": 58908
+    },
+    {
+      "icon_id": "11909738",
+      "name": "转发、分享、撤销",
+      "font_class": "zhuanfa-",
+      "unicode": "e61d",
+      "unicode_decimal": 58909
+    },
+    {
+      "icon_id": "11909741",
+      "name": "增长、销量、数据、走趋",
+      "font_class": "zengchang-",
+      "unicode": "e61e",
+      "unicode_decimal": 58910
+    },
+    {
+      "icon_id": "11909742",
+      "name": "消息、信息、短信",
+      "font_class": "xiaoxi-",
+      "unicode": "e61f",
+      "unicode_decimal": 58911
+    }
+  ]
+}
