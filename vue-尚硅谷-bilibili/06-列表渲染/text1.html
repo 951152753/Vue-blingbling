@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>06-列表渲染</title>
+</head>
+
+<body>
+    <!-- 
+        1.列表显示
+            数组： v-for index
+            对象： v-for key
+        2.列表的更新显示
+            删除 item
+            替换 item
+     -->
+    <div id="demo">
+        <h2>1. v-for 遍历数组</h2>
+        <ul>
+            <li v-for="(item,i) in person" :key='i'>
+                {{i}}--{{item.name}}--{{item.age}}
+                <button @click="delBtn(i)"> 删除</button>
+                <button @click="updateBtn(i,{name:'Rouse',age: 27})"> 更新</button>
+            </li>
+        </ul>
+
+        <h2>2. v-for 遍历对象</h2>
+        <ul>
+            <li v-for="(value,k) in person[1]" :key='k'>
+                {{k}}--{{value}}
+            </li>
+        </ul>
+    </div>
+
+    <script src="../js/vue.js"></script>
+    <script>
+        new Vue({
+            el: '#demo',
+            data: {
+                person: [{
+                    name: 'Tom', age: 18
+                }, {
+                    name: 'Joye', age: 20
+                }, {
+                    name: 'Davi', age: 16
+                }, {
+                    name: 'Jack', age: 23
+                }, {
+                    name: 'Lisa', age: 30
+                }]
+            },
+            methods: {
+                delBtn(index) {
+                    this.person.splice(index, 1)
+                },
+                updateBtn(index, obj) {
+                    // this.person[index] = obj  // 这是错误的，因为没有直接改变 person 本身
+                    this.person.splice(index,1,obj)
+                }
+            }
+        })
+
+    </script>
+</body>
+
+</html>

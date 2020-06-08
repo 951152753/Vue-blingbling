@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>02-模板语法</title>
+</head>
+
+<body>
+    <div id="app">
+        <h2>1.双大括号表达式</h2>
+        <p>{{msg}}</p>
+        <p>{{msg.toUpperCase()}}</p>
+        <p v-text="msg"></p> <!-- textContent -->
+        <p v-html="msg"></p> <!-- innerHTML -->
+        <h2>2.指令一：强制数据绑定</h2>
+        <!-- v-bind:   : -->
+        <img :src="imgURL" style="width: 50px;">
+        <h2>3.指令二：绑定数据监听</h2>
+        <!-- v-on:click   @click -->
+        <button v-on:click="clickBtn">点我</button>
+        <button v-on:click="clickBtn2('(*^▽^*)')">点我</button>
+    </div>
+
+    <script type="text/javascript" src="../js/vue.js"></script>
+    <script type="text/javascript">
+        const vm = new Vue({
+            el: '#app', 
+            data: { // data 所有属性都会成为 vm 的属性，在模板页面可以直接访问
+                msg: '<a href="https://www.baidu.com">baidu</a>',
+                imgURL: 'https://cn.vuejs.org/images/logo.png'
+            },
+            methods: {
+                clickBtn(){
+                    alert('哈哈，你点我干啥')
+                },
+                clickBtn2(param){
+                    alert(param+'你点我干啥')
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>

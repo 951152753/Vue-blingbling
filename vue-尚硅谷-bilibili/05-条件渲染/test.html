@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>05-条件渲染</title>
+</head>
+
+<body>
+    <!-- 
+        1. 条件渲染指令
+            v-if （创建、移除）
+            v-else
+            v-show （显示、隐藏 display:none）
+        2. v-if 和 v-show 比较
+            如果需要频繁切换，v-show 更好
+
+     -->
+    <div id="demo">
+        <p v-if="ok">v-if="ok"</p>
+        <p v-else>v-else</p>
+        <p v-show="ok">v-show="ok"</p>
+
+        <button @click='ok=!ok'>切换</button>
+    </div>
+
+    <script type="text/javascript" src="../js/vue.js"></script>
+    <script type="text/javascript">
+        new Vue({
+            el: '#demo',
+            data: {
+                ok: false
+            }
+        })
+    </script>
+
+</body>
+
+</html>

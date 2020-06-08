@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>08-表单输入绑定</title>
+</head>
+
+<body>
+    <!-- 
+        使用 v-model(双向数据绑定)自动收集数据
+            text/textarea/checkout/radio/select
+     -->
+    <div id="demo">
+        <form action="/xxx" @submit.prevent='handleSubmit'>
+            <fieldset style="width: fit-content;">
+                <legend>个人信息录入</legend>
+
+                <span>用户名：</span><input type="file" placeholder="请输入用户名" v-model="userName"><br><br>
+
+                <span>密&emsp;码：</span><input type="password" placeholder="请输入密码" v-model="pwd"><br><br>
+
+                <span>性&emsp;别：</span>
+                <input type="radio" name="sex" id="female" value="女" v-model="sex"><label for="female">女</label>
+                <input type="radio" name="sex" id="male" value="男" v-model="sex"><label for="male">男</label><br><br>
+
+                <span>爱&emsp;好：</span>
+                <input type="checkbox" name="hobby" id="musicalInstrument" value="琴" v-model="hobby"><label
+                    for="musicalInstrument">琴</label>
+                <input type="checkbox" name="hobby" id="chess" value="棋" v-model="hobby"><label for="chess">棋</label>
+                <input type="checkbox" name="hobby" id="read" value="书" v-model="hobby"><label for="read">书</label>
+                <input type="checkbox" name="hobby" id="draw" value="画" v-model="hobby"><label
+                    for="draw">画</label><br><br>
+
+                <span>城&emsp;市：</span>
+                <select name="city" id="" v-model="cityId">
+                    <option :value="item.id" v-for="(item, i) in cities" :key="i">{{item.name}}</option>
+                </select><br><br>
+
+                <span>介&emsp;绍：</span><br>
+                <textarea name="" id="" cols="30" rows="10" v-model="decs"></textarea><br><br>
+
+                <button type="reset">重置</button>
+                <button type="submit">注册</button>
+            </fieldset>
+        </form>
+    </div>
+
+    <script src="../js/vue.js"></script>
+    <script>
+        new Vue({
+            el: '#demo',
+            data: {
+                userName: '',
+                pwd: '',
+                sex: '女',
+                hobby: ['书'],
+                cities: [{
+                    id: 0, name: '未选择'
+                }, {
+                    id: 1, name: '北京'
+                }, {
+                    id: 2, name: '上海'
+                }, {
+                    id: 3, name: '广州'
+                }, {
+                    id: 4, name: '深圳'
+                }],
+                cityId: 0,
+                decs: ''
+            },
+            methods: {
+                handleSubmit() {
+                    console.log(this.userName, this.pwd, this.sex, this.hobby, this.cityId, this.decs)
+                }
+            }
+        })
+
+    </script>
+</body>
+
+</html>

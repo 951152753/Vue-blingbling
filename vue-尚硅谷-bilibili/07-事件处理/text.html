@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>07-事件处理</title>
+</head>
+
+<body>
+    <!-- 
+        1.绑定监听
+            v-on:xxx="fun"
+            @xxx="fun"
+            @xxx="fun(参数)"
+            默认事件形参: event
+            隐含属性对象: $event
+        2.事件修饰符
+            .prevent: 阻止事件的默认行为 event.preventDefault()
+            .stop: 停止事件冒泡 event.stopPropagation()
+        3.按键修饰符
+            .keycode: 操作的是某个 keycode 键的值
+            .enter: 操作的是 enter 键
+     -->
+    <div id="demo">
+        <h2>1.绑定监听</h2>
+        <button @click="test1">test1</button>
+        <button @click="test2('ykx')">test2</button>
+        <button @click="test3($event)">test3</button>
+        <button @click="test4('ykx', $event)">test4</button>
+
+        <h2>2.事件修饰符</h2>
+        <div style="width:200px; height:200px; background:red" @click="clickOuter">
+            <!-- @click.stop 阻止事件冒泡 -->
+            <div style="width:100px; height:100px; background:blue" @click.stop="clickInner"></div>
+        </div>
+        <!-- @click.prevent 阻止事件的默认行为 -->
+        <a href="http:www.baidu.com" @click.prevent="goBaidu">百度一下</a>
+
+        <h2>3.按键修饰符</h2>
+        <input type="text" @keyup="testKeyup1">
+        <input type="text" @keyup.13="testKeyup2">
+        <input type="text" @keyup.enter="testKeyup2">
+    </div>
+
+    <script src="../js/vue.js"></script>
+    <script>
+        new Vue({
+            el: '#demo',
+            data: {
+                test1() {
+                    // 若没传参，则可直接获取 event.target
+                    alert('test1' + ',' + event.target.innerHTML)
+                },
+                test2(msg) {
+                    alert(msg)
+                    // 若已传非 $event 的参数，则不能直接获取 event.target
+                    // alert(msg, event.target.innerHTML) // 报错
+                },
+                test3(event) {
+                    // 若传 $event 或 没传参，都可直接获取 event.target
+                    alert(event.target.innerHTML)
+                },
+                test4(msg, event) {
+                    // 若传 $event 或 没传参，都可直接获取 event.target
+                    alert(msg + ',' + event.target.innerHTML)
+                },
+                clickOuter() {
+                    alert('点击了 外层')
+                },
+                clickInner() {
+                    // event.stopPropagation()
+                    // 若不阻止事件冒泡，则点击内层后，会先运行 clickInner, 再运行 clickOuter
+                    alert('点击了 内层')
+                },
+                goBaidu() {
+                    // event.preventDefault()
+                    alert('去百度')
+                },
+                testKeyup1(event) {
+                    if (event.keyCode === 13) {
+                        alert(event.target.value + '，enter键的 keyCode 为' + event.keyCode)
+                    }
+                },
+                testKeyup2(event){
+                    alert(event.target.value + '，enter键的 keyCode 为' + event.keyCode)
+                }
+            }
+        })
+
+    </script>
+</body>
+
+</html>
